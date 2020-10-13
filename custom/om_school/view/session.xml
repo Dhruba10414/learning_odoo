@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<odoo>
+
+    <data>
+
+        <record model="ir.ui.view" id="session_form_view">
+            <field name="name">school.session.form</field>
+            <field name="model">school.session</field>
+            <field name="arch" type="xml">
+                <form string="session form">
+                    <sheet>
+                        <h1><field name="name"/></h1>
+                        <group>
+                            <field name="student_id"/>
+                        </group>
+                        <group>
+                            <field name="instructor_id"/>
+                        </group>
+                        <notebook>
+                            <page string="courses">
+                                <field name="course_ids"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+
+                </form>
+
+            </field>
+
+        </record>
+
+        <record model="ir.ui.view" id="session_list_view">
+            <field name="name">school.session.list</field>
+            <field name="model">school.session</field>
+            <field name="arch" type="xml">
+                <tree string="session list">
+                    <field name="name"/>
+                    <field name="instructor_id"/>
+
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>

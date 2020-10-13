@@ -23,6 +23,10 @@ class SchoolStudent(models.Model):
 
     total_fee= fields.Float(string='Total Fees', readonly= True)
 
+    session_ids=fields.One2many(comodel_name='school.session',
+                                inverse_name='student_id',
+                                string='sessions')
+
     @api.onchange('tuition_fee','additional_donation')
     def _onchnge_total_fee(self):
         if self.tuition_fee < 0.00:

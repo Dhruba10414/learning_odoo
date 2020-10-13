@@ -10,7 +10,9 @@
     'depends': ['base', 'mail'],
     'data': [
         'security/ir.model.access.csv',
-        'view/student.xml'
+        'view/student.xml',
+        'view/menuitem.xml',
+        'view/session.xml'
     ],
     'demo': [],
     'qweb': [],
