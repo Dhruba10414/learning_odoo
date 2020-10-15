@@ -17,6 +17,8 @@ class SchoolSession(models.Model):
 
     course_ids = fields.Many2many(comodel_name='res.partner',string='Courses')
 
+    color = fields.Integer()
+
     start_date = fields.Date(string='Start Date',
                              default=fields.Date.today)
 
