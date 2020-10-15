@@ -77,6 +77,22 @@
         </field>
     </record>
 
+    <record id="student_pivot_view" model="ir.ui.view">
+        <field name="name">school.student.pivot</field>
+        <field name="model">school.student</field>
+        <field name="arch" type="xml">
+            <pivot>
+                <field name="name" type="row"/>
+                <field name="tuition_fee" type="measure"/>
+                <field name="additional_donation" type="measure"/>
+
+            </pivot>
+
+
+        </field>
+
+    </record>
+
 
 
 
