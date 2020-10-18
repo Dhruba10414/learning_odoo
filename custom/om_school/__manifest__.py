@@ -7,7 +7,7 @@
     'license': 'AGPL-3',
     'summary': 'School Management Module',
     'description': """Module to manage school""",
-    'depends': ['base', 'mail'],
+    'depends': ['base', 'mail','sale'],
     'data': [
         'security/ir.model.access.csv',
         'view/student.xml',
