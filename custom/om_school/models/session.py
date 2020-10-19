@@ -30,6 +30,9 @@ class SchoolSession(models.Model):
                            inverse='_inverse_end_date',
                            store=True)
 
+    total_price = fields.Float(string='Total Price',
+                               related='student_id.total_fee')
+
     @api.depends('start_date', 'duration')
     def _compute_end_date(self):
         for record in self:
