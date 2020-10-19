@@ -13,7 +13,8 @@
         'view/student.xml',
         'view/menuitem.xml',
         'view/session.xml',
-        'view/saleinherit.xml'
+        'view/saleinherit.xml',
+        'view/product_views_inherit.xml'
     ],
     'demo': [],
     'qweb': [],
