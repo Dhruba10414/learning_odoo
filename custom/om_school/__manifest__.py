@@ -12,7 +12,8 @@
         'security/ir.model.access.csv',
         'view/student.xml',
         'view/menuitem.xml',
-        'view/session.xml'
+        'view/session.xml',
+        'view/saleinherit.xml'
     ],
     'demo': [],
     'qweb': [],

@@ -15,4 +15,3 @@ class SaleOrder(models.Model):
     course_ids = fields.Many2many(string='Courses',
                                    related='session_id.course_ids')
 
-    
