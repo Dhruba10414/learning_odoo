@@ -14,7 +14,8 @@
         'view/menuitem.xml',
         'view/session.xml',
         'view/saleinherit.xml',
-        'view/product_views_inherit.xml'
+        'view/product_views_inherit.xml',
+        'wizard/sale_wizard_view.xml'
     ],
     'demo': [],
     'qweb': [],
