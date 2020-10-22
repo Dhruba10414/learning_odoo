@@ -16,7 +16,8 @@
         'view/saleinherit.xml',
         'view/product_views_inherit.xml',
         'wizard/sale_wizard_view.xml',
-        'report/session_report_templates.xml'
+        'report/session_report_templates.xml',
+        'report/session_report_templates0.xml'
     ],
     'demo': [],
     'qweb': [],
