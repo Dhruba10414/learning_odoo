@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<odoo>
+    <data>
+        <record id='package_tree_view' model='ir.ui.view'>
+            <field name="name">tourism.package.tree</field>
+            <field name="model">tourism.package</field>
+            <field name="arch" type="xml">
+                <tree string="Packages">
+
+                    <field name="name" />
+                    <field name="duration" />
+                    <field name="transport" />
+                    <field name="price"/>
+
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="package_search_view">
+            <field name="name">tourism.package.search</field>
+            <field name="model">tourism.package</field>
+            <field name="arch" type="xml">
+                <search>
+
+                    <field name="name" />
+                </search>
+            </field>
+        </record>
+
+        <record id="package_form_view" model="ir.ui.view">
+            <field name="name">tourism.package.form</field>
+            <field name="model">tourism.package</field>
+            <field name="arch" type="xml">
+                <form string="Packages">
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" />
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="duration" force_save="3" />
+                            </group>
+                            <group>
+                                <field name="transport"/>
+                            </group>
+                            <group>
+                                <field name="price"/>
+
+                            </group>
+                        </group>
+
+                    </sheet>
+
+                </form>
+            </field>
+        </record>
+
+    </data>
+</odoo>

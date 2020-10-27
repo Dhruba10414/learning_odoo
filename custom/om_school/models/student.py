@@ -39,4 +39,3 @@ class SchoolStudent(models.Model):
         for record in self:
             if record.additional_donation < 10000:
                 raise ValidationError('Add a donation more than 10000.')
-
