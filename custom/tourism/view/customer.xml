@@ -59,6 +59,22 @@
             </field>
         </record>
 
+        <record id="Customer_pivot_view" model="ir.ui.view">
+            <field name="name">tourism.customer.pivot</field>
+            <field name="model">tourism.customer</field>
+            <field name="arch" type="xml">
+                <pivot>
+                    <!--<field name="name" type="row"/>-->
+                    <field name="package_id" type="row"/>
+                    <field name="total_price" type="measure"/>
+
+                </pivot>
+
+
+            </field>
+
+        </record>
+
 
 
     </data>
