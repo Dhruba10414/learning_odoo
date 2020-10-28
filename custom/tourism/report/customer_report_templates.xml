@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<odoo>
+
+    <template id="report_customer_document">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <h2 t-field="doc.name" class="mt16"/>
+                        <div class="row mt32 mb32" id="session_info">
+                            <div t-if="doc.package_name" class="col-auto mw-100 mb-2">
+                                <strong>Package Name:</strong>
+                                <span t-field="doc.package_name"/>
+                            </div>
+
+                        </div>
+                        <div class="row mt32 mb32" id="customer_info">
+                            <div class="col-auto mw-100 mb-2">
+                                <strong>Tour Duration:</strong>
+                                <t t-if="doc.start_date">
+                                    <span t-field="doc.start_date"/>
+                                </t>
+                                to
+                                <t t-if="doc.end_date">
+                                    <span t-field="doc.end_date"/>
+                                </t>
+                            </div>
+
+                            <div t-if="doc.guide_id" class="col-auto mw-100 mb-2">
+                                <strong>Guide:</strong>
+                                <span t-field="doc.guide_id.name"/>
+                            </div>
+
+                        </div>
+                        <div class="row mt32 mb32" id="session_info">
+                            <div t-if="doc.total_price" class="col-auto mw-100 mb-2">
+                                <strong>Total Price</strong>
+                                <span t-field="doc.total_price"/>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+</odoo>

@@ -12,7 +12,9 @@
         'security/ir.model.access.csv',
         'view/menu.xml',
         'view/package.xml',
-        'view/customer.xml'
+        'view/customer.xml',
+        'report/customer_report_templates.xml',
+        'report/customer_report_templates0.xml'
     ],
     'demo': [],
     'qweb': [],

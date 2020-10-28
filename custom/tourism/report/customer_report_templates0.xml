@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<odoo>
+    <record id="report_customer" model="ir.actions.report">
+        <field name="name">Customer Report</field>
+        <field name="model">tourism.customer</field>
+        <field name="report_type">qweb-html</field>
+        <field name="report_name">tourism.report_customer_document</field>
+        <field name="report_file">tourism.report_customer</field>
+        <field name="binding_model_id" ref="model_tourism_customer"/>
+        <field name="binding_type">report</field>
+    </record>
+</odoo>
