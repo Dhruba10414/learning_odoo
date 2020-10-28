@@ -11,3 +11,7 @@ class TourismPackage(models.Model):
         ('bus', 'Bus'),
         ('air', 'Air'),
     ], string='transport', default='bus')
+
+    customer_ids = fields.One2many(comodel_name='tourism.customer',
+                                  inverse_name='package_id',
+                                  string='Customers')

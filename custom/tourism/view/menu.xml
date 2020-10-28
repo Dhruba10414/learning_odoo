@@ -16,6 +16,17 @@
             </field>
         </record>
 
+        <record id="action_customer" model="ir.actions.act_window">
+            <field name="name">Customers</field>
+            <field name="res_model">tourism.customer</field>
+            <field name="view_mode">tree,form,calendar</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling face">
+                    Create Your Customers!
+                </p>
+            </field>
+        </record>
+
         <menuitem id="tourism_root_menu"
               name="Tourism"
               web_icon="tourism,static/description/icon.png"
@@ -26,6 +37,12 @@
               action="action_package"
               parent="tourism_root_menu"
               sequence="7"/>
+
+        <menuitem id="tourism_customer_menu"
+              name="Customer"
+              action="action_customer"
+              parent="tourism_root_menu"
+              sequence="8"/>
 
     </data>
 

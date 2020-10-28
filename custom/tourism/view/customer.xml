@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="session_form_view">
+            <field name="name">tourism.customer.form</field>
+            <field name="model">tourism.customer</field>
+            <field name="arch" type="xml">
+                <form string="customer form">
+                    <sheet>
+                        <h1><field name="name"/></h1>
+                        <group>
+                            <field name="package_id"/>
+                            <field name="guide_id"/>
+                            <field name="quantity"/>
+                            <field name="total_price" force_save="1"/>
+
+                        </group>
+
+                        <group>
+                            <field name="start_date"/>
+                            <field name="end_date"/>
+                            <field name="duration"/>
+                        </group>
+
+                    </sheet>
+
+                </form>
+
+            </field>
+
+        </record>
+
+        <record model="ir.ui.view" id="customer_tree_view">
+            <field name="name">tourism.customer.tree</field>
+            <field name="model">tourism.customer</field>
+            <field name="arch" type="xml">
+                <tree string="Customer List">
+                    <field name="name"/>
+                    <field name="package_name"/>
+                    <field name="guide_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="customer_calendar_view">
+            <field name="name">tourism.customer.calendar</field>
+            <field name="model">tourism.customer</field>
+            <field name="arch" type="xml">
+                <calendar string="customer calendar" date_start="start_date" date_stop="end_date" color="guide_id" mode="month">
+                    <field name="name"/>
+                    <field name="package_id"/>
+                    <field name="guide_id"/>
+                    <field name="quantity"/>
+
+                </calendar>
+
+
+            </field>
+        </record>
+
+
+
+    </data>
+</odoo>

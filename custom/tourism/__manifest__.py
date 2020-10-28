@@ -11,7 +11,8 @@
     'data': [
         'security/ir.model.access.csv',
         'view/menu.xml',
-        'view/package.xml'
+        'view/package.xml',
+        'view/customer.xml'
     ],
     'demo': [],
     'qweb': [],
