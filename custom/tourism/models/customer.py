@@ -7,7 +7,9 @@ class TourismCustomer(models.Model):
     _name = 'tourism.customer'
     _description = 'Customer Information'
 
-    name = fields.Char(string="Name", required=True)
+    name = fields.Many2one(string='Name',comodel_name='res.partner', required=True)
+
+
 
     package_id = fields.Many2one(comodel_name='tourism.package',
                                  string='package',
@@ -15,6 +17,14 @@ class TourismCustomer(models.Model):
                                  required=True)
 
     package_name = fields.Char(string='Package Title', related='package_id.name')
+
+    phone_no = fields.Integer(string='Phone No')
+
+    email = fields.Text(string='Email')
+
+    address = fields.Text(string='Address')
+
+    occupation = fields.Text(string= 'Occupation')
 
     quantity = fields.Integer(string="Quantity")
 
