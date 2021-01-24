@@ -1,3 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_tourism_package,access.tourism.package,model_tourism_package,,1,1,1,1
-access_tourism_customer,access.tourism.customer,model_tourism_customer,,1,1,1,1
